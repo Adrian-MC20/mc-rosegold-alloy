@@ -1,5 +1,6 @@
 package dev.maleficent.rosegoldalloy;
 
+import dev.maleficent.rosegoldalloy.registry.ModBlocks;
 import dev.maleficent.rosegoldalloy.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -9,5 +10,6 @@ public class RoseGoldAlloy implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.register();
+        ModBlocks.register();
 	}
 }

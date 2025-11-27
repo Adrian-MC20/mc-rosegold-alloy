@@ -1,6 +1,8 @@
 package dev.maleficent.rosegoldalloy;
 
+import dev.maleficent.rosegoldalloy.datagen.ModLootTableProvider;
 import dev.maleficent.rosegoldalloy.datagen.ModModelProvider;
+import dev.maleficent.rosegoldalloy.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.Pack;
@@ -13,5 +15,7 @@ public class RoseGoldAlloyDataGenerator implements DataGeneratorEntrypoint {
 
         // Fow now we only care about the item models.
         pack.addProvider(ModModelProvider::new);
+        pack.addProvider(ModLootTableProvider::new);
+        pack.addProvider(ModRecipeProvider::new);
 	}
 }

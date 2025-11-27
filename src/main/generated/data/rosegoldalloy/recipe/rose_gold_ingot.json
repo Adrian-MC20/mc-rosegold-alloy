@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "G": "minecraft:gold_ingot",
+    "Q": "minecraft:quartz"
+  },
+  "pattern": [
+    "CQ",
+    "G "
+  ],
+  "result": {
+    "count": 2,
+    "id": "rosegoldalloy:rose_gold_ingot"
+  }
+}

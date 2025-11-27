@@ -1,5 +1,6 @@
 package dev.maleficent.rosegoldalloy.datagen;
 
+import dev.maleficent.rosegoldalloy.registry.ModBlocks;
 import dev.maleficent.rosegoldalloy.registry.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -15,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-        // Nothing yet. No blocks for v0.1.
+        blockModelGenerators.createTrivialCube(ModBlocks.ROSE_GOLD_BLOCK);
     }
 
     @Override
