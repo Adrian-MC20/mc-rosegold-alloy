@@ -1,7 +1,7 @@
 # Rose Gold Alloy Mod
 **Minecraft 1.21.10 | Fabric | Mojang Mappings**  
 **Mod ID:** `rosegoldalloy`  
-**Package Root:** `ro.maleficent.rosegoldalloy`
+**Package Root:** `dev.maleficent.rosegoldalloy`
 
 This document outlines the **concept**, **planned content**, and **design direction** for the Rose Gold Alloy mod.  
 All features described below are in early planning unless marked otherwise.
