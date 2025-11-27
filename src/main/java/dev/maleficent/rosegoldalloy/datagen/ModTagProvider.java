@@ -5,12 +5,14 @@ import dev.maleficent.rosegoldalloy.registry.ModToolMaterials;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.Item;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModTagProvider extends FabricTagProvider {
-    public ModTagProvider(FabricDataOutput output, ResourceKey registryKey, CompletableFuture registriesFuture) {
+public class ModTagProvider extends FabricTagProvider<Item> {
+    public ModTagProvider(FabricDataOutput output, ResourceKey<Registry<Item>> registryKey, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registryKey, registriesFuture);
     }
 
