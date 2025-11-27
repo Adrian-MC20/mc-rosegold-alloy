@@ -15,27 +15,28 @@ It does **not** generate in the world; players must produce it themselves, formi
 
 ### 1.1 Alloy Logic
 
-**Pros of using ingots (current decision):**
-- Alloys are made from refined metals, not raw ores
-- Matches how Netherite uses refined materials
-- Clean gameplay flow: smelt → alloy → craft
+Pros of using ingots (current decision):
+- Alloys are made from refined metals, not raw ores.
+- Matches how Netherite uses refined materials.
+- Clean gameplay flow: smelt -> alloy -> craft.
 
-**Alternative (raw ores):**  
+Alternative (raw ores):  
 Considered but not adopted; feels less logical and breaks the fantasy of alloy-making.
+
+In addition to Copper and Gold, the alloy recipe also uses **Nether Quartz** as a catalyst-like component, to make the recipe slightly more demanding and thematically “refined”.
 
 ---
 
 ## 2. Materials
 
 ### 2.1 Rose Gold Ingot
+
 This is the fundamental building block of the entire mod.
 
 Planned characteristics:
-- Crafted from Copper and Gold
-- Used for all equipment and block types
-- Designed as a **mid-tier metal**
-- Durability and strength between Iron and Diamond
-- Enchantability similar to Iron
+- Crafted from Copper, Gold and Nether Quartz.
+- Used for all equipment and block types.
+- Designed as a **mid-tier metal**.
 
 ---
 
@@ -44,15 +45,39 @@ Planned characteristics:
 Before tools, armor, blocks, or trims can exist, players must be able to **obtain** Rose Gold.
 
 ### 3.1 Alloy Creation
-Planned recipe:
-`1x Copper Ingot + 1x Gold Ingot → 2x Rose Gold Ingots`
+
+Planned **shaped** crafting recipe (2x2 area, flexible placement inside the 3x3 grid).
+
+Legend:
+- `C` = Copper Ingot
+- `G` = Gold Ingot
+- `Q` = Nether Quartz
+- `.` = empty slot
+
+Pattern (conceptually, "." is empty):
+
+    . C Q
+    . G .
+    . . .
+
+Any placement of this 2x2 pattern inside the 3x3 crafting grid should be accepted.  
+Result: **2x Rose Gold Ingots**.
 
 ### 3.2 Block Recipes
-- 9 Rose Gold Ingots → 1 Rose Gold Block
-- 1 Rose Gold Block → 9 Rose Gold Ingots
 
-These define the core progression loop:
-collect → smelt → alloy → craft → upgrade.
+- 9 Rose Gold Ingots -> 1 Rose Gold Block
+- 1 Rose Gold Block -> 9 Rose Gold Ingots
+
+These define the core progression loop:  
+collect -> smelt -> alloy -> craft -> upgrade.
+
+### 3.3 Recipe Unlocking (Advancements)
+
+All crafting recipes in this mod will be unlocked through specific invisible advancements, following the same system used by vanilla. Each recipe will have its own intentional progression condition, such as obtaining a certain item before the recipe becomes available.
+
+Planned behavior:
+- **Rose Gold Ingot recipe** unlocks once the player obtains a **Gold Ingot** in their inventory for the first time.
+- Future recipes (tools, armor, blocks) will have their own advancement-based conditions, to keep progression structured and intentional.
 
 ---
 
@@ -60,33 +85,28 @@ collect → smelt → alloy → craft → upgrade.
 
 Once Rose Gold exists and is obtainable, players can craft equipment.
 
-### 4.1 Tool Set
+### 4.1 Design Philosophy
 
-Planned Rose Gold tools:
+Rose Gold is designed as a specialized mid-tier material that excels in **durability** and **enchantability**, rather than raw power. It sits comfortably between Iron and Diamond, offering a meaningful upgrade for players who value longevity and magical potential over speed and damage.
+
+Its tools can mine anything Iron can, but they are not intended to be primary weapons, having a damage output that is intentionally lower than Iron. The mining speed is comparable to Iron, making it a reliable workhorse. The true strength of Rose Gold lies in its exceptional durability—lasting significantly longer than Iron—and its high enchantability, which surpasses even Diamond, making it an ideal canvas for powerful enchantments.
+
+### 4.2 Tool Set
+
+Planned Rose Gold tools, which will inherit the philosophy above:
 - Sword
 - Pickaxe
 - Axe
 - Shovel
 - Hoe
 
-General intentions:
-- Stronger than Iron
-- Weaker than Diamond
-- Faster mining than Iron
-- Improved durability over Iron
+### 4.3 Armor Set
 
-### 4.2 Armor Set
-
-Planned armor pieces:
+Planned armor pieces, which will use the material philosophy defined above:
 - Helmet
 - Chestplate
 - Leggings
 - Boots
-
-Design goals:
-- Protection between Iron and Diamond
-- Slightly better enchantability than Iron
-- Standard vanilla recipes
 
 ---
 
@@ -95,16 +115,13 @@ Design goals:
 Rose Gold should offer decorative and storage functionality.
 
 Planned block types:
-- **Rose Gold Block** (storage block)
-- Optional future variants:
-    - Bars
-    - Sheets / plates
-    - Decorative patterns or trims
+- **Rose Gold Block** (storage block).
+
+Optional future variants:
+- Bars.
+- Decorative blocks
 
 Nothing will generate naturally in the world.
-
-Optional future feature:
-- Tarnish/oxidation system similar to Copper
 
 ---
 
@@ -113,9 +130,9 @@ Optional future feature:
 Rose Gold Ingot will also function as a **trim material** in the Smithing Table.
 
 Concept goals:
-- Adds a warm rose-gold tint to armor trims
-- Works on all existing trimmable armor
-- Future Rose Gold Armor will support trims as well
+- Adds a warm rose-gold tint to armor trims.
+- Works on all existing trimmable armor.
+- Future Rose Gold Armor will support trims as well.
 
 This feature becomes relevant once the base material and crafting recipes are implemented.
 
@@ -125,23 +142,23 @@ This feature becomes relevant once the base material and crafting recipes are im
 
 These are brainstorming concepts, not commitments:
 
-- Rose Gold Anvil
-- Rose Gold Lanterns, Chains, or decorative items
-- Special Rose Gold weapon traits
-- Additional decorative block shapes
-- Cosmetic or utility golem entity
-- Environmental interactions or oxidation behavior
+- Rose Gold Lanterns, Chains, or decorative items.
+- Special Rose Gold weapon traits.
+- Additional decorative block shapes.
+- Environmental interactions or oxidation behavior.
 
 These may be explored only after the core tier is complete and balanced.
 
 ---
 
 ## 8. Technical Notes (Development)
+
 `as of Nov 2025`
-- Target version: **Minecraft 1.21.10**
-- Fabric Loader: **0.18.1**
-- Mappings: **Mojang**
-- Namespace: `rosegoldalloy`
+
+- Target version: **Minecraft 1.21.10**.
+- Fabric Loader: **0.18.1**.
+- Mappings: **Mojang**.
+- Namespace: `rosegoldalloy`.
 - All content will be gradually moved into **data generation** once the initial structure is in place.
 
 ### 8.1 Data Generation
@@ -157,27 +174,27 @@ Contributors should follow the datagen structure when adding new content.
 ## 9. Roadmap Overview
 
 ### Phase 1 — Foundation
-- [ ] Rose Gold Ingot
-- [ ] Alloy crafting recipe
-- [ ] Rose Gold Block
-- [ ] Block compression/decompression
-- [ ] Basic textures & models
-- [ ] Trim material integration
+
+- [x] Rose Gold Ingot.
+- [x] Alloy crafting recipe.
+- [x] Rose Gold Block.
+- [x] Block compression/decompression.
+- [x] Basic textures and models.
+- [ ] Trim material integration.
 
 ### Phase 2 — Equipment
-- [ ] Tool material balancing
-- [ ] Implement all tool types
-- [ ] Armor material balancing
-- [ ] Implement full armor set
-- [ ] Add Rose Gold Armor to trim systems
+
+- [ ] Define Tool & Armor Materials.
+- [ ] Implement all tool types.
+- [ ] Implement full armor set.
+- [ ] Add Rose Gold Armor to trim systems.
 
 ### Phase 3 — Decorative Blocks
-- [ ] Bars / sheets / plates (optional)
-- [ ] Oxidation or tarnish variants (optional)
+
+- [ ] Open to ideas.
 
 ### Phase 4 — Extended Features
-- [ ] Additional block types
-- [ ] Utility or cosmetic additions
-- [ ] Community-requested features
 
----
+- [ ] Additional block types.
+- [ ] Utility or cosmetic additions.
+- [ ] Community-requested features.
