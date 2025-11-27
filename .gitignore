@@ -6,6 +6,9 @@ out/
 # Fabric run directory
 run/
 
+# DataGenerator cache
+src/main/generated/.cache
+
 # Loom caches
 loom-cache/
 
