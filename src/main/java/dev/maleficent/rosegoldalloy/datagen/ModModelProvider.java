@@ -25,5 +25,25 @@ public class ModModelProvider extends FabricModelProvider {
                 ModItems.ROSE_GOLD_INGOT,
                 ModelTemplates.FLAT_ITEM
         );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_SWORD,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_PICKAXE,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_AXE,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_SHOVEL,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModItems.ROSE_GOLD_HOE,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
     }
 }

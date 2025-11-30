@@ -1,4 +1,9 @@
 {
   "item.rosegoldalloy.rose_gold_ingot": "Rose Gold Ingot",
-  "block.rosegoldalloy.rose_gold_block": "Block of Rose Gold"
+  "block.rosegoldalloy.rose_gold_block": "Block of Rose Gold",
+  "item.rosegoldalloy.rose_gold_pickaxe": "Rose Gold Pickaxe",
+  "item.rosegoldalloy.rose_gold_sword": "Rose Gold Sword",
+  "item.rosegoldalloy.rose_gold_axe": "Rose Gold Axe",
+  "item.rosegoldalloy.rose_gold_shovel": "Rose Gold Shovel",
+  "item.rosegoldalloy.rose_gold_hoe": "Rose Gold Hoe"
 }

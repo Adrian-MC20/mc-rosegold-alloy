@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": "minecraft:stick",
+    "I": "rosegoldalloy:rose_gold_ingot"
+  },
+  "pattern": [
+    "I",
+    "I",
+    "/"
+  ],
+  "result": {
+    "count": 1,
+    "id": "rosegoldalloy:rose_gold_sword"
+  }
+}

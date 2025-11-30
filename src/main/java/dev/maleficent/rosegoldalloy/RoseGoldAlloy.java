@@ -9,7 +9,7 @@ public class RoseGoldAlloy implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        ModItems.register();
-        ModBlocks.register();
+        ModItems.init();
+        ModBlocks.init();
 	}
 }

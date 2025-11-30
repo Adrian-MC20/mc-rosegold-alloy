@@ -18,7 +18,7 @@ public class ModToolMaterials {
 
     // We will define the ROSE_GOLD material here.
     public static final ToolMaterial ROSE_GOLD = new ToolMaterial(
-            BlockTags.NEEDS_DIAMOND_TOOL,
+            BlockTags.INCORRECT_FOR_IRON_TOOL,
             650,
             6.0f,
             1.0f,

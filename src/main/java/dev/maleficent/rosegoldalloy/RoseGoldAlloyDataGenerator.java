@@ -1,9 +1,6 @@
 package dev.maleficent.rosegoldalloy;
 
-import dev.maleficent.rosegoldalloy.datagen.ModLootTableProvider;
-import dev.maleficent.rosegoldalloy.datagen.ModModelProvider;
-import dev.maleficent.rosegoldalloy.datagen.ModRecipeProvider;
-import dev.maleficent.rosegoldalloy.datagen.ModTagProvider;
+import dev.maleficent.rosegoldalloy.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.Pack;
@@ -19,6 +16,7 @@ public class RoseGoldAlloyDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModLootTableProvider::new);
         pack.addProvider(ModRecipeProvider::new);
-        pack.addProvider((output, registriesFuture) -> new ModTagProvider(output, Registries.ITEM, registriesFuture));
+        pack.addProvider((output, registriesFuture) -> new ModItemsTagProvider(output, Registries.ITEM, registriesFuture));
+        pack.addProvider((output, registriesFuture) -> new ModBlocksTagProvider(output, Registries.BLOCK, registriesFuture));
 	}
 }

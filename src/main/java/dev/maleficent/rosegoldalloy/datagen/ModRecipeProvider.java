@@ -26,11 +26,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             public void buildRecipes() {
                 // Rose Gold Ingot Recipe
                 shaped(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT, 2)
-                        .pattern("CQ")
-                        .pattern("G ")
+                        .pattern("GA")
+                        .pattern("CC")
                         .define('C', Items.COPPER_INGOT)
                         .define('G', Items.GOLD_INGOT)
-                        .define('Q', Items.QUARTZ)
+                        .define('A', Items.AMETHYST_SHARD)
                         .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                         .save(output);
 
@@ -48,6 +48,56 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(ModBlocks.ROSE_GOLD_BLOCK)
                         .unlockedBy(getHasName(ModBlocks.ROSE_GOLD_BLOCK), has(ModBlocks.ROSE_GOLD_BLOCK))
                         .save(output, "rose_gold_ingots_from_block");
+
+                // Rose Gold Sword
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_SWORD)
+                        .pattern("I")
+                        .pattern("I")
+                        .pattern("/")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .define('/', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Pickaxe
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLD_PICKAXE)
+                        .pattern("III")
+                        .pattern(" / ")
+                        .pattern(" / ")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .define('/', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Axe
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLD_AXE)
+                        .pattern("II")
+                        .pattern("I/")
+                        .pattern(" /")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .define('/', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Shovel
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLD_SHOVEL)
+                        .pattern("I")
+                        .pattern("/")
+                        .pattern("/")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .define('/', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
+
+                // Rose Gold Hoe
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLD_HOE)
+                        .pattern("II")
+                        .pattern(" /")
+                        .pattern(" /")
+                        .define('I', ModItems.ROSE_GOLD_INGOT)
+                        .define('/', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT), has(ModItems.ROSE_GOLD_INGOT))
+                        .save(output);
             }
         };
     }
