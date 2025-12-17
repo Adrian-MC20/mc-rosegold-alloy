@@ -1,7 +1,7 @@
 package dev.maleficent.rosegoldalloy.registry;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -17,7 +17,7 @@ public class ModArmorMaterials {
     // 1. Define a TagKey for the repair items.
     // This creates a unique ID for a list of items that can be used for repair
     public static final TagKey<Item> ROSE_GOLD_REPAIR_INGREDIENTS = TagKey.create(Registries.ITEM,
-            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_repair_ingredients"));
+            Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_repair_ingredients"));
 
     private static final Map<ArmorType, Integer> defenceMap = Map.of(
             ArmorType.HELMET, 2,

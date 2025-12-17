@@ -24,43 +24,18 @@ public class ModItemsTagProvider extends FabricTagProvider<Item> {
 
         // Register tags for Rose Gold Sword
         builder(ItemTags.SWORDS).add(ModItems.ROSE_GOLD_SWORD_KEY);
-        builder(ItemTags.SWORD_ENCHANTABLE).add(ModItems.ROSE_GOLD_SWORD_KEY);
-        builder(ItemTags.WEAPON_ENCHANTABLE).add(ModItems.ROSE_GOLD_SWORD_KEY);
-        builder(ItemTags.SHARP_WEAPON_ENCHANTABLE).add(ModItems.ROSE_GOLD_SWORD_KEY);
-        builder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.ROSE_GOLD_SWORD_KEY);
-        builder(ItemTags.VANISHING_ENCHANTABLE).add(ModItems.ROSE_GOLD_SWORD_KEY);
-        builder(ItemTags.EQUIPPABLE_ENCHANTABLE).add(ModItems.ROSE_GOLD_SWORD_KEY);
 
         // Register tags for Rose Gold Pickaxe
-        builder(ItemTags.MINING_ENCHANTABLE).add(ModItems.ROSE_GOLD_PICKAXE_KEY);
-        builder(ItemTags.MINING_LOOT_ENCHANTABLE).add(ModItems.ROSE_GOLD_PICKAXE_KEY);
-        builder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.ROSE_GOLD_PICKAXE_KEY);
-        builder(ItemTags.VANISHING_ENCHANTABLE).add(ModItems.ROSE_GOLD_PICKAXE_KEY);
-        builder(ItemTags.EQUIPPABLE_ENCHANTABLE).add(ModItems.ROSE_GOLD_PICKAXE_KEY);
-
+        builder(ItemTags.PICKAXES).add(ModItems.ROSE_GOLD_PICKAXE_KEY);
 
         // Register tags for Rose Gold Axe
-        builder(ItemTags.WEAPON_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
-        builder(ItemTags.SHARP_WEAPON_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
-        builder(ItemTags.MINING_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
-        builder(ItemTags.MINING_LOOT_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
-        builder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
-        builder(ItemTags.VANISHING_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
-        builder(ItemTags.EQUIPPABLE_ENCHANTABLE).add(ModItems.ROSE_GOLD_AXE_KEY);
+        builder(ItemTags.AXES).add(ModItems.ROSE_GOLD_AXE_KEY);
 
         // Register tags for Rose Gold Shovel
-        builder(ItemTags.MINING_ENCHANTABLE).add(ModItems.ROSE_GOLD_SHOVEL_KEY);
-        builder(ItemTags.MINING_LOOT_ENCHANTABLE).add(ModItems.ROSE_GOLD_SHOVEL_KEY);
-        builder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.ROSE_GOLD_SHOVEL_KEY);
-        builder(ItemTags.VANISHING_ENCHANTABLE).add(ModItems.ROSE_GOLD_SHOVEL_KEY);
-        builder(ItemTags.EQUIPPABLE_ENCHANTABLE).add(ModItems.ROSE_GOLD_SHOVEL_KEY);
+        builder(ItemTags.SHOVELS).add(ModItems.ROSE_GOLD_SHOVEL_KEY);
 
         // Register tags for Rose Gold Hoe
-        builder(ItemTags.MINING_ENCHANTABLE).add(ModItems.ROSE_GOLD_HOE_KEY);
-        builder(ItemTags.MINING_LOOT_ENCHANTABLE).add(ModItems.ROSE_GOLD_HOE_KEY);
-        builder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.ROSE_GOLD_HOE_KEY);
-        builder(ItemTags.VANISHING_ENCHANTABLE).add(ModItems.ROSE_GOLD_HOE_KEY);
-        builder(ItemTags.EQUIPPABLE_ENCHANTABLE).add(ModItems.ROSE_GOLD_HOE_KEY);
+        builder(ItemTags.HOES).add(ModItems.ROSE_GOLD_HOE_KEY);
 
         // Register tags for Rose Gold Armor
         builder(ItemTags.HEAD_ARMOR_ENCHANTABLE).add(ModItems.ROSE_GOLD_HELMET_KEY);

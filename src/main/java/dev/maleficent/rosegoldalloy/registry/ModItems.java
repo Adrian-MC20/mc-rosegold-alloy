@@ -5,7 +5,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 
@@ -16,34 +16,34 @@ import static dev.maleficent.rosegoldalloy.RoseGoldAlloy.MOD_ID;
 public class ModItems {
     // 1. Resource Keys for all items (used for registry, tags, datagen etc.)
     public static final ResourceKey<Item> ROSE_GOLD_INGOT_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_ingot"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_ingot"));
 
     public static final ResourceKey<Item> ROSE_GOLD_SWORD_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_sword"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_sword"));
 
     public static final ResourceKey<Item> ROSE_GOLD_PICKAXE_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_pickaxe"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_pickaxe"));
 
     public static final ResourceKey<Item> ROSE_GOLD_AXE_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_axe"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_axe"));
 
     public static final ResourceKey<Item> ROSE_GOLD_SHOVEL_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_shovel"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_shovel"));
 
     public static final ResourceKey<Item> ROSE_GOLD_HOE_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_hoe"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_hoe"));
 
     public static final ResourceKey<Item> ROSE_GOLD_HELMET_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_helmet"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_helmet"));
 
     public static final ResourceKey<Item> ROSE_GOLD_CHESTPLATE_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_chestplate"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_chestplate"));
 
     public static final ResourceKey<Item> ROSE_GOLD_LEGGINGS_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_leggings"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_leggings"));
 
     public static final ResourceKey<Item> ROSE_GOLD_BOOTS_KEY =
-            ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "rose_gold_boots"));
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "rose_gold_boots"));
 
     // 2. Item instances
     public static final Item ROSE_GOLD_INGOT =
